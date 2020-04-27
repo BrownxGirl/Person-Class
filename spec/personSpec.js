@@ -14,7 +14,7 @@ describe('should return the proprty values', function(){
         expect(personObject.person.gender).toBe("male")
     });
     it('return an array of interest from the person object',function(){
-        expect(personObject.person.interests).toBe([' being a hardarse', ' agile', ' and ssd hard drives.'])
+        expect(personObject.person.interests).toEqual([' being a hardarse', ' agile', ' and ssd hard drives.'])
     });
     it('return the age property of the person object',function(){
         expect(personObject.person.age).toEqual(30)
